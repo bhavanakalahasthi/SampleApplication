@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function changeText(){
+	
+	var div1 = document.getElementById("div1");
+	
+	var newH2 = document.createElement("h2");
+	newH2.innerHTML="Welcome to javascript";
+	div1.appendChild(newH2);
+	
+}
+</script>
+</head>
+<body>
+<h2 align="center" id="header2">Add more text</h2>
+<div id="div1"></div>
+
+<p>
+<button onclick="changeText()">Click me</button>
+</p>
+
+</body>
+</html>

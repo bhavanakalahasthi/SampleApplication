@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title> DEM0</title>
+<script type="text/javascript">
+function validatefname(){
+	var fname = document.getElementsById("fname").value;
+	if(fname=="" || fname == null){
+		alert("please provide firstname");
+	}
+	
+	function changebgcolor(elementRef){
+		//document.getElemenById("fname").style.background="#DCDCDC";
+		elementRef.style.backgroundColor="#DCDCDC";
+		
+	}
+	function resetbgcolor(elementRef)
+	{
+		elementRef.style.backgroundColor="#FFFFFF";
+	}
+}
+
+</script>
+</head>
+<body>
+
+<h2> REGISTRATION  </h2>
+
+
+<h2 align="center">form</h2>
+<form action="" onsubmit="validatefname()">
+<div align="center">
+<table>
+<tr>
+<td align="left"><label> Firstname</label></td>
+<td><input type="text" name="firstname" min="4" max="15" required></td>
+</tr>
+<tr>
+<td align="left"><label> lastname</label></td><td><input type="text" name="lastname" onfocus="changebgcolor(this)"></td>
+</tr>
+<tr>
+<td align="left"><label>email</label></td><td><input type="text" name="email" onblur="resetbgcolor(this)"onfocus="changebgcolor(this)></td>
+</tr>
+<tr>
+<td><input type="submit" value="register"></td>
+</tr>
+</table>
+</div>
+</form>
+</body>
+</html>
